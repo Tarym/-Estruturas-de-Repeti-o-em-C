@@ -15,30 +15,30 @@ int main() {
 
     do {
         printf("\n====================================\n");
-        printf("     Serviço TI       \n");
+        printf("    ServiÃ§o TI     \n");
         printf("====================================\n");
-        printf("1 - Registrar Novo Atendimento\n");
-        printf("0 - Encerrar Expediente e Ver Relatório\n");
-        printf("Escolha uma opção: ");
+        printf("1 - Registrar Novo Atendimento \n");
+        printf("0 - Encerrar Expediente e Ver RelatÃ³rio \n");
+        printf("Escolha uma opÃ§Ã£o: ");
         scanf("%d", &opcao);
 
         switch (opcao) {
             case 1:
-                printf("\n==== Registrar Atendimento ====\n");
+                printf("\n==== Registrar o Atendimento ====\n");
                 
                 do {
                     printf("Tipo (1 - Software | 2 - Hardware | 3 - Rede): ");
                     scanf("%d", &tipo);
                     if (tipo < 1 || tipo > 3) {
-                        printf("Tipo inválido! Tente novamente.\n");
+                        printf("Tipo invÃ¡lido. Tente novamente.\n");
                     }
                 } while (tipo < 1 || tipo > 3);
 
                 do {
-                    printf("Prioridade (1 - Urgente | 2 - Prioritário | 3 - Normal): ");
+                    printf("Prioridade (1 - Urgente | 2 - PrioritÃ¡rio | 3 - Normal): ");
                     scanf("%d", &prioridade);
                     if (prioridade < 1 || prioridade > 3) {
-                        printf("Prioridade inválida! Tente novamente.\n");
+                        printf("Prioridade invÃ¡lida. Tente novamente.\n");
                     }
                 } while (prioridade < 1 || prioridade > 3);
 
@@ -69,13 +69,14 @@ int main() {
                 break;
 
             default:
-                printf("Opção inválida! Tente novamente.\n");
+                printf("OpÃ§Ã£o invÃ¡lida! Tente novamente.\n");
         }
 
-    } while (opcao != 0);
+    } 
+        while (opcao != 0);
 
     printf("\n====================================\n");
-    printf("   RELATÓRIO FINAL DE ATENDIMENTOS  \n");
+    printf("   RELATÃ“RIO FINAL DE ATENDIMENTOS  \n");
     printf("====================================\n");
     printf("Total de atendimentos realizados: %d\n", totalAtendimentos);
     printf("=====================================\n");
